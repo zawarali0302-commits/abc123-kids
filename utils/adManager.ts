@@ -1,9 +1,10 @@
 import {
   InterstitialAd,
   AdEventType,
+  TestIds,
 } from 'react-native-google-mobile-ads';
 
-const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-2107256352390559/2101682280', {
+const interstitial = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL || 'ca-app-pub-2107256352390559/2101682280', {
   requestNonPersonalizedAdsOnly: true, // required for kids apps (COPPA)
 });
 

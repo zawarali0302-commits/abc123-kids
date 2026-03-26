@@ -2,7 +2,7 @@ import { View, StyleSheet } from 'react-native';
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 
 export default function AppBannerAd() {
-    const bannerAdUnitId = 'ca-app-pub-2107256352390559/3857350182';
+    const bannerAdUnitId = TestIds.BANNER || 'ca-app-pub-2107256352390559/3857350182';
 
     return (
         <View style={styles.container}>
